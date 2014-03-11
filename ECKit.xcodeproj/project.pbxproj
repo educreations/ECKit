@@ -19,6 +19,38 @@
 		D93805F418CF6F4E00FFF937 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93805DC18CF6F4E00FFF937 /* UIKit.framework */; };
 		D93805FC18CF6F4E00FFF937 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D93805FA18CF6F4E00FFF937 /* InfoPlist.strings */; };
 		D93805FE18CF6F4E00FFF937 /* ECKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D93805FD18CF6F4E00FFF937 /* ECKitTests.m */; };
+		D96F514B18CF7908005BCAF7 /* ECPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F513018CF7908005BCAF7 /* ECPlatform.m */; };
+		D96F514C18CF7908005BCAF7 /* ECPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F513018CF7908005BCAF7 /* ECPlatform.m */; };
+		D96F514D18CF7908005BCAF7 /* NSArray+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F513418CF7908005BCAF7 /* NSArray+ECKit.m */; };
+		D96F514E18CF7908005BCAF7 /* NSArray+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F513418CF7908005BCAF7 /* NSArray+ECKit.m */; };
+		D96F514F18CF7908005BCAF7 /* NSData+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F513618CF7908005BCAF7 /* NSData+ECKit.m */; };
+		D96F515018CF7908005BCAF7 /* NSData+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F513618CF7908005BCAF7 /* NSData+ECKit.m */; };
+		D96F515118CF7908005BCAF7 /* NSDate+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F513818CF7908005BCAF7 /* NSDate+ECKit.m */; };
+		D96F515218CF7908005BCAF7 /* NSDate+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F513818CF7908005BCAF7 /* NSDate+ECKit.m */; };
+		D96F515318CF7908005BCAF7 /* NSString+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F513A18CF7908005BCAF7 /* NSString+ECKit.m */; };
+		D96F515418CF7908005BCAF7 /* NSString+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F513A18CF7908005BCAF7 /* NSString+ECKit.m */; };
+		D96F515518CF7908005BCAF7 /* UIApplication+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F513D18CF7908005BCAF7 /* UIApplication+ECKit.m */; };
+		D96F515618CF7908005BCAF7 /* UIApplication+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F513D18CF7908005BCAF7 /* UIApplication+ECKit.m */; };
+		D96F515718CF7908005BCAF7 /* UIColor+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F513F18CF7908005BCAF7 /* UIColor+ECKit.m */; };
+		D96F515818CF7908005BCAF7 /* UIColor+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F513F18CF7908005BCAF7 /* UIColor+ECKit.m */; };
+		D96F515918CF7908005BCAF7 /* UIDevice+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514118CF7908005BCAF7 /* UIDevice+ECKit.m */; };
+		D96F515A18CF7908005BCAF7 /* UIDevice+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514118CF7908005BCAF7 /* UIDevice+ECKit.m */; };
+		D96F515B18CF7908005BCAF7 /* UIImage+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514318CF7908005BCAF7 /* UIImage+ECKit.m */; };
+		D96F515C18CF7908005BCAF7 /* UIImage+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514318CF7908005BCAF7 /* UIImage+ECKit.m */; };
+		D96F515D18CF7908005BCAF7 /* UIScreen+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514618CF7908005BCAF7 /* UIScreen+ECKit.m */; };
+		D96F515E18CF7908005BCAF7 /* UIScreen+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514618CF7908005BCAF7 /* UIScreen+ECKit.m */; };
+		D96F515F18CF7908005BCAF7 /* UIView+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514818CF7908005BCAF7 /* UIView+ECKit.m */; };
+		D96F516018CF7908005BCAF7 /* UIView+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514818CF7908005BCAF7 /* UIView+ECKit.m */; };
+		D96F516118CF7908005BCAF7 /* UIViewController+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514A18CF7908005BCAF7 /* UIViewController+ECKit.m */; };
+		D96F516218CF7908005BCAF7 /* UIViewController+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514A18CF7908005BCAF7 /* UIViewController+ECKit.m */; };
+		D96F516818CF8D45005BCAF7 /* NSMutableArray+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F516718CF8D45005BCAF7 /* NSMutableArray+ECKit.m */; };
+		D96F516918CF8D45005BCAF7 /* NSMutableArray+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F516718CF8D45005BCAF7 /* NSMutableArray+ECKit.m */; };
+		D96F516C18CF8D53005BCAF7 /* NSMutableDictionary+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F516B18CF8D53005BCAF7 /* NSMutableDictionary+ECKit.m */; };
+		D96F516D18CF8D53005BCAF7 /* NSMutableDictionary+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F516B18CF8D53005BCAF7 /* NSMutableDictionary+ECKit.m */; };
+		D96F517018CF8D68005BCAF7 /* NSMutableSet+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F516F18CF8D68005BCAF7 /* NSMutableSet+ECKit.m */; };
+		D96F517118CF8D68005BCAF7 /* NSMutableSet+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F516F18CF8D68005BCAF7 /* NSMutableSet+ECKit.m */; };
+		D96F517418CF8E79005BCAF7 /* NSNotificationCenter+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F517318CF8E79005BCAF7 /* NSNotificationCenter+ECKit.m */; };
+		D96F517518CF8E79005BCAF7 /* NSNotificationCenter+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F517318CF8E79005BCAF7 /* NSNotificationCenter+ECKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +80,44 @@
 		D93805F918CF6F4E00FFF937 /* ECKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ECKitTests-Info.plist"; sourceTree = "<group>"; };
 		D93805FB18CF6F4E00FFF937 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D93805FD18CF6F4E00FFF937 /* ECKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECKitTests.m; sourceTree = "<group>"; };
+		D96F512D18CF7908005BCAF7 /* ECBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECBlocks.h; sourceTree = "<group>"; };
+		D96F512E18CF7908005BCAF7 /* ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECKit.h; sourceTree = "<group>"; };
+		D96F512F18CF7908005BCAF7 /* ECPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPlatform.h; sourceTree = "<group>"; };
+		D96F513018CF7908005BCAF7 /* ECPlatform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECPlatform.m; sourceTree = "<group>"; };
+		D96F513218CF7908005BCAF7 /* Foundation+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+ECKit.h"; sourceTree = "<group>"; };
+		D96F513318CF7908005BCAF7 /* NSArray+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ECKit.h"; sourceTree = "<group>"; };
+		D96F513418CF7908005BCAF7 /* NSArray+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ECKit.m"; sourceTree = "<group>"; };
+		D96F513518CF7908005BCAF7 /* NSData+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ECKit.h"; sourceTree = "<group>"; };
+		D96F513618CF7908005BCAF7 /* NSData+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ECKit.m"; sourceTree = "<group>"; };
+		D96F513718CF7908005BCAF7 /* NSDate+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ECKit.h"; sourceTree = "<group>"; };
+		D96F513818CF7908005BCAF7 /* NSDate+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ECKit.m"; sourceTree = "<group>"; };
+		D96F513918CF7908005BCAF7 /* NSString+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ECKit.h"; sourceTree = "<group>"; };
+		D96F513A18CF7908005BCAF7 /* NSString+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ECKit.m"; sourceTree = "<group>"; };
+		D96F513C18CF7908005BCAF7 /* UIApplication+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+ECKit.h"; sourceTree = "<group>"; };
+		D96F513D18CF7908005BCAF7 /* UIApplication+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+ECKit.m"; sourceTree = "<group>"; };
+		D96F513E18CF7908005BCAF7 /* UIColor+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ECKit.h"; sourceTree = "<group>"; };
+		D96F513F18CF7908005BCAF7 /* UIColor+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ECKit.m"; sourceTree = "<group>"; };
+		D96F514018CF7908005BCAF7 /* UIDevice+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ECKit.h"; sourceTree = "<group>"; };
+		D96F514118CF7908005BCAF7 /* UIDevice+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ECKit.m"; sourceTree = "<group>"; };
+		D96F514218CF7908005BCAF7 /* UIImage+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ECKit.h"; sourceTree = "<group>"; };
+		D96F514318CF7908005BCAF7 /* UIImage+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ECKit.m"; sourceTree = "<group>"; };
+		D96F514418CF7908005BCAF7 /* UIKit+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+ECKit.h"; sourceTree = "<group>"; };
+		D96F514518CF7908005BCAF7 /* UIScreen+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+ECKit.h"; sourceTree = "<group>"; };
+		D96F514618CF7908005BCAF7 /* UIScreen+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+ECKit.m"; sourceTree = "<group>"; };
+		D96F514718CF7908005BCAF7 /* UIView+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ECKit.h"; sourceTree = "<group>"; };
+		D96F514818CF7908005BCAF7 /* UIView+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ECKit.m"; sourceTree = "<group>"; };
+		D96F514918CF7908005BCAF7 /* UIViewController+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ECKit.h"; sourceTree = "<group>"; };
+		D96F514A18CF7908005BCAF7 /* UIViewController+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ECKit.m"; sourceTree = "<group>"; };
+		D96F516318CF86C1005BCAF7 /* ECMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECMacros.h; sourceTree = "<group>"; };
+		D96F516518CF89D4005BCAF7 /* CoreGraphics+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreGraphics+ECKit.h"; sourceTree = "<group>"; };
+		D96F516618CF8D45005BCAF7 /* NSMutableArray+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+ECKit.h"; sourceTree = "<group>"; };
+		D96F516718CF8D45005BCAF7 /* NSMutableArray+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+ECKit.m"; sourceTree = "<group>"; };
+		D96F516A18CF8D53005BCAF7 /* NSMutableDictionary+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+ECKit.h"; sourceTree = "<group>"; };
+		D96F516B18CF8D53005BCAF7 /* NSMutableDictionary+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+ECKit.m"; sourceTree = "<group>"; };
+		D96F516E18CF8D68005BCAF7 /* NSMutableSet+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+ECKit.h"; sourceTree = "<group>"; };
+		D96F516F18CF8D68005BCAF7 /* NSMutableSet+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+ECKit.m"; sourceTree = "<group>"; };
+		D96F517218CF8E79005BCAF7 /* NSNotificationCenter+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+ECKit.h"; sourceTree = "<group>"; };
+		D96F517318CF8E79005BCAF7 /* NSNotificationCenter+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+ECKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +126,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D93805DB18CF6F4E00FFF937 /* CoreGraphics.framework in Frameworks */,
-				D93805DD18CF6F4E00FFF937 /* UIKit.framework in Frameworks */,
 				D93805D918CF6F4E00FFF937 /* Foundation.framework in Frameworks */,
+				D93805DD18CF6F4E00FFF937 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,9 +135,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D93805F218CF6F4E00FFF937 /* XCTest.framework in Frameworks */,
-				D93805F418CF6F4E00FFF937 /* UIKit.framework in Frameworks */,
 				D93805F318CF6F4E00FFF937 /* Foundation.framework in Frameworks */,
+				D93805F418CF6F4E00FFF937 /* UIKit.framework in Frameworks */,
+				D93805F218CF6F4E00FFF937 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +147,7 @@
 		D93805CC18CF6F4E00FFF937 = {
 			isa = PBXGroup;
 			children = (
+				D96F512C18CF7908005BCAF7 /* ECKit */,
 				D93805DE18CF6F4E00FFF937 /* ECKitApp */,
 				D93805F718CF6F4E00FFF937 /* ECKitTests */,
 				D93805D718CF6F4E00FFF937 /* Frameworks */,
@@ -96,8 +167,8 @@
 		D93805D718CF6F4E00FFF937 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D93805D818CF6F4E00FFF937 /* Foundation.framework */,
 				D93805DA18CF6F4E00FFF937 /* CoreGraphics.framework */,
+				D93805D818CF6F4E00FFF937 /* Foundation.framework */,
 				D93805DC18CF6F4E00FFF937 /* UIKit.framework */,
 				D93805F118CF6F4E00FFF937 /* XCTest.framework */,
 			);
@@ -107,10 +178,10 @@
 		D93805DE18CF6F4E00FFF937 /* ECKitApp */ = {
 			isa = PBXGroup;
 			children = (
+				D93805DF18CF6F4E00FFF937 /* Supporting Files */,
 				D93805E718CF6F4E00FFF937 /* ECAppDelegate.h */,
 				D93805E818CF6F4E00FFF937 /* ECAppDelegate.m */,
 				D93805EA18CF6F4E00FFF937 /* Images.xcassets */,
-				D93805DF18CF6F4E00FFF937 /* Supporting Files */,
 			);
 			path = ECKitApp;
 			sourceTree = "<group>";
@@ -119,9 +190,9 @@
 			isa = PBXGroup;
 			children = (
 				D93805E018CF6F4E00FFF937 /* ECKitApp-Info.plist */,
+				D93805E618CF6F4E00FFF937 /* ECKitApp-Prefix.pch */,
 				D93805E118CF6F4E00FFF937 /* InfoPlist.strings */,
 				D93805E418CF6F4E00FFF937 /* main.m */,
-				D93805E618CF6F4E00FFF937 /* ECKitApp-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -129,8 +200,8 @@
 		D93805F718CF6F4E00FFF937 /* ECKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				D93805FD18CF6F4E00FFF937 /* ECKitTests.m */,
 				D93805F818CF6F4E00FFF937 /* Supporting Files */,
+				D93805FD18CF6F4E00FFF937 /* ECKitTests.m */,
 			);
 			path = ECKitTests;
 			sourceTree = "<group>";
@@ -142,6 +213,75 @@
 				D93805FA18CF6F4E00FFF937 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D96F512C18CF7908005BCAF7 /* ECKit */ = {
+			isa = PBXGroup;
+			children = (
+				D96F516418CF89D4005BCAF7 /* CoreGraphics */,
+				D96F513118CF7908005BCAF7 /* Foundation */,
+				D96F513B18CF7908005BCAF7 /* UIKit */,
+				D96F512D18CF7908005BCAF7 /* ECBlocks.h */,
+				D96F512E18CF7908005BCAF7 /* ECKit.h */,
+				D96F516318CF86C1005BCAF7 /* ECMacros.h */,
+				D96F512F18CF7908005BCAF7 /* ECPlatform.h */,
+				D96F513018CF7908005BCAF7 /* ECPlatform.m */,
+			);
+			path = ECKit;
+			sourceTree = "<group>";
+		};
+		D96F513118CF7908005BCAF7 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				D96F513218CF7908005BCAF7 /* Foundation+ECKit.h */,
+				D96F513318CF7908005BCAF7 /* NSArray+ECKit.h */,
+				D96F513418CF7908005BCAF7 /* NSArray+ECKit.m */,
+				D96F513518CF7908005BCAF7 /* NSData+ECKit.h */,
+				D96F513618CF7908005BCAF7 /* NSData+ECKit.m */,
+				D96F513718CF7908005BCAF7 /* NSDate+ECKit.h */,
+				D96F513818CF7908005BCAF7 /* NSDate+ECKit.m */,
+				D96F516618CF8D45005BCAF7 /* NSMutableArray+ECKit.h */,
+				D96F516718CF8D45005BCAF7 /* NSMutableArray+ECKit.m */,
+				D96F516A18CF8D53005BCAF7 /* NSMutableDictionary+ECKit.h */,
+				D96F516B18CF8D53005BCAF7 /* NSMutableDictionary+ECKit.m */,
+				D96F516E18CF8D68005BCAF7 /* NSMutableSet+ECKit.h */,
+				D96F516F18CF8D68005BCAF7 /* NSMutableSet+ECKit.m */,
+				D96F517218CF8E79005BCAF7 /* NSNotificationCenter+ECKit.h */,
+				D96F517318CF8E79005BCAF7 /* NSNotificationCenter+ECKit.m */,
+				D96F513918CF7908005BCAF7 /* NSString+ECKit.h */,
+				D96F513A18CF7908005BCAF7 /* NSString+ECKit.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		D96F513B18CF7908005BCAF7 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				D96F513C18CF7908005BCAF7 /* UIApplication+ECKit.h */,
+				D96F513D18CF7908005BCAF7 /* UIApplication+ECKit.m */,
+				D96F513E18CF7908005BCAF7 /* UIColor+ECKit.h */,
+				D96F513F18CF7908005BCAF7 /* UIColor+ECKit.m */,
+				D96F514018CF7908005BCAF7 /* UIDevice+ECKit.h */,
+				D96F514118CF7908005BCAF7 /* UIDevice+ECKit.m */,
+				D96F514218CF7908005BCAF7 /* UIImage+ECKit.h */,
+				D96F514318CF7908005BCAF7 /* UIImage+ECKit.m */,
+				D96F514418CF7908005BCAF7 /* UIKit+ECKit.h */,
+				D96F514518CF7908005BCAF7 /* UIScreen+ECKit.h */,
+				D96F514618CF7908005BCAF7 /* UIScreen+ECKit.m */,
+				D96F514718CF7908005BCAF7 /* UIView+ECKit.h */,
+				D96F514818CF7908005BCAF7 /* UIView+ECKit.m */,
+				D96F514918CF7908005BCAF7 /* UIViewController+ECKit.h */,
+				D96F514A18CF7908005BCAF7 /* UIViewController+ECKit.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		D96F516418CF89D4005BCAF7 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				D96F516518CF89D4005BCAF7 /* CoreGraphics+ECKit.h */,
+			);
+			path = CoreGraphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +337,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D93805D018CF6F4E00FFF937 /* Build configuration list for PBXProject "ECKitApp" */;
+			buildConfigurationList = D93805D018CF6F4E00FFF937 /* Build configuration list for PBXProject "ECKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -220,8 +360,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D93805E318CF6F4E00FFF937 /* InfoPlist.strings in Resources */,
 				D93805EB18CF6F4E00FFF937 /* Images.xcassets in Resources */,
+				D93805E318CF6F4E00FFF937 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +381,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				D93805E918CF6F4E00FFF937 /* ECAppDelegate.m in Sources */,
+				D96F514B18CF7908005BCAF7 /* ECPlatform.m in Sources */,
 				D93805E518CF6F4E00FFF937 /* main.m in Sources */,
+				D96F514D18CF7908005BCAF7 /* NSArray+ECKit.m in Sources */,
+				D96F514F18CF7908005BCAF7 /* NSData+ECKit.m in Sources */,
+				D96F515118CF7908005BCAF7 /* NSDate+ECKit.m in Sources */,
+				D96F516818CF8D45005BCAF7 /* NSMutableArray+ECKit.m in Sources */,
+				D96F516C18CF8D53005BCAF7 /* NSMutableDictionary+ECKit.m in Sources */,
+				D96F517018CF8D68005BCAF7 /* NSMutableSet+ECKit.m in Sources */,
+				D96F517418CF8E79005BCAF7 /* NSNotificationCenter+ECKit.m in Sources */,
+				D96F515318CF7908005BCAF7 /* NSString+ECKit.m in Sources */,
+				D96F515518CF7908005BCAF7 /* UIApplication+ECKit.m in Sources */,
+				D96F515718CF7908005BCAF7 /* UIColor+ECKit.m in Sources */,
+				D96F515918CF7908005BCAF7 /* UIDevice+ECKit.m in Sources */,
+				D96F515B18CF7908005BCAF7 /* UIImage+ECKit.m in Sources */,
+				D96F515D18CF7908005BCAF7 /* UIScreen+ECKit.m in Sources */,
+				D96F515F18CF7908005BCAF7 /* UIView+ECKit.m in Sources */,
+				D96F516118CF7908005BCAF7 /* UIViewController+ECKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +406,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				D93805FE18CF6F4E00FFF937 /* ECKitTests.m in Sources */,
+				D96F514C18CF7908005BCAF7 /* ECPlatform.m in Sources */,
+				D96F514E18CF7908005BCAF7 /* NSArray+ECKit.m in Sources */,
+				D96F515018CF7908005BCAF7 /* NSData+ECKit.m in Sources */,
+				D96F515218CF7908005BCAF7 /* NSDate+ECKit.m in Sources */,
+				D96F516918CF8D45005BCAF7 /* NSMutableArray+ECKit.m in Sources */,
+				D96F516D18CF8D53005BCAF7 /* NSMutableDictionary+ECKit.m in Sources */,
+				D96F517118CF8D68005BCAF7 /* NSMutableSet+ECKit.m in Sources */,
+				D96F517518CF8E79005BCAF7 /* NSNotificationCenter+ECKit.m in Sources */,
+				D96F515418CF7908005BCAF7 /* NSString+ECKit.m in Sources */,
+				D96F515618CF7908005BCAF7 /* UIApplication+ECKit.m in Sources */,
+				D96F515818CF7908005BCAF7 /* UIColor+ECKit.m in Sources */,
+				D96F515A18CF7908005BCAF7 /* UIDevice+ECKit.m in Sources */,
+				D96F515C18CF7908005BCAF7 /* UIImage+ECKit.m in Sources */,
+				D96F515E18CF7908005BCAF7 /* UIScreen+ECKit.m in Sources */,
+				D96F516018CF7908005BCAF7 /* UIView+ECKit.m in Sources */,
+				D96F516218CF7908005BCAF7 /* UIViewController+ECKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +488,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/ECKit/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -350,6 +527,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/ECKit/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -428,7 +610,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D93805D018CF6F4E00FFF937 /* Build configuration list for PBXProject "ECKitApp" */ = {
+		D93805D018CF6F4E00FFF937 /* Build configuration list for PBXProject "ECKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D93805FF18CF6F4E00FFF937 /* Debug */,
@@ -444,6 +626,7 @@
 				D938060318CF6F4E00FFF937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D938060418CF6F4E00FFF937 /* Build configuration list for PBXNativeTarget "ECKitTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +635,7 @@
 				D938060618CF6F4E00FFF937 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

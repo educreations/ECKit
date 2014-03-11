@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 
+#import "ECKit.h"
+
 @interface ECKitTests : XCTestCase
 
 @end

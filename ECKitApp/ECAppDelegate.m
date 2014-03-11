@@ -8,6 +8,8 @@
 
 #import "ECAppDelegate.h"
 
+#import "ECKit.h"
+
 @implementation ECAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
