@@ -19,6 +19,14 @@
 # endif
 #endif
 
+#ifndef NS_REQUIRES_SUPER
+# if __has_attribute(objc_requires_super)
+#  define NS_REQUIRES_SUPER __attribute((objc_requires_super))
+# else
+#  define NS_REQUIRES_SUPER
+# endif
+#endif
+
 
 //------------------------------------------------------------------------------
 #pragma mark -
