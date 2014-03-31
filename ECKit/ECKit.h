@@ -8,6 +8,8 @@
 
 #import "Foundation+ECKit.h"
 
+#import "ECMacros.h"
+
 #if TARGET_OS_IPHONE
 # import "UIKit+ECKit.h"
 #endif
