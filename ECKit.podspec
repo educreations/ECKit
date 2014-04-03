@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.license = { :type => 'MIT', :file => 'LICENSE' }
 
   s.source = { :git => 'https://github.com/educreations/ECKit.git', :tag => s.version.to_s }
-  s.source_files  = 'ECKit/**'
+  s.source_files  = 'ECKit/**/*.{h,m}'
 
   s.requires_arc = true
   s.ios.deployment_target = '7.0'
