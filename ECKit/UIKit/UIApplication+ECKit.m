@@ -25,7 +25,7 @@
 {
     NSString *build = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
 
-    return [NSString stringWithFormat:@"%X", build.integerValue];
+    return [NSString stringWithFormat:@"%lX", (long)build.integerValue];
 }
 
 @end
