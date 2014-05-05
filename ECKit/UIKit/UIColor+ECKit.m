@@ -25,12 +25,12 @@
 + (UIColor *)ec_colorWithHexString:(NSString *)hex
 {
 	const char *cString = [hex cStringUsingEncoding:NSASCIIStringEncoding];
-	long int hexadecimal;
+	unsigned int hexadecimal;
 
 	if (cString[0] == '#') {
-		hexadecimal = strtol(cString + 1, NULL, 16);
+		hexadecimal = (unsigned int)strtol(cString + 1, NULL, 16);
 	} else {
-		hexadecimal = strtol(cString, NULL, 16);
+		hexadecimal = (unsigned int)strtol(cString, NULL, 16);
 	}
 
 	return [UIColor ec_colorWithHex:hexadecimal];
@@ -51,12 +51,12 @@
 + (UIColor *)ec_colorWithAlphaHexString:(NSString *)hex
 {
 	const char *cString = [hex cStringUsingEncoding:NSASCIIStringEncoding];
-	UInt32 hexadecimal;
+	unsigned int hexadecimal;
 
 	if (cString[0] == '#') {
-		hexadecimal = strtol(cString + 1, NULL, 16);
+		hexadecimal = (unsigned int)strtol(cString + 1, NULL, 16);
 	} else {
-		hexadecimal = strtol(cString, NULL, 16);
+		hexadecimal = (unsigned int)strtol(cString, NULL, 16);
 	}
 
 	return [UIColor ec_colorWithAlphaHex:hexadecimal];
@@ -66,9 +66,9 @@
 {
 	const CGFloat *components = CGColorGetComponents([color CGColor]);
 	NSString *hexadecimal = [NSString stringWithFormat:@"#%02X%02X%02X",
-                             (NSUInteger)(255 * components[0]),
-                             (NSUInteger)(255 * components[1]),
-                             (NSUInteger)(255 * components[2])];
+                             (unsigned int)(255 * components[0]),
+                             (unsigned int)(255 * components[1]),
+                             (unsigned int)(255 * components[2])];
 
 	return hexadecimal;
 }
