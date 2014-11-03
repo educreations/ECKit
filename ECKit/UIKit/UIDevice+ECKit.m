@@ -59,8 +59,10 @@
         case UIDeviceiPad4G:
         case UIDeviceiPad3:
         case UIDeviceiPadAir:
+        case UIDeviceiPadAir2:
         case UIDeviceiPadMini:
         case UIDeviceiPadMiniRetina:
+        case UIDeviceiPadMini3:
         case UIDeviceiPadSimulator:
         case UIDeviceUnknowniPad:
             return UIDeviceFamilyiPad;
@@ -171,10 +173,14 @@
             return @"iPad 4G";
         case UIDeviceiPadAir:
             return @"iPad Air";
+        case UIDeviceiPadAir2:
+            return @"iPad Air 2";
         case UIDeviceiPadMini:
             return @"iPad Mini";
         case UIDeviceiPadMiniRetina:
             return @"iPad Mini Retina";
+        case UIDeviceiPadMini3:
+            return @"iPad Mini 3";
         case UIDeviceUnknown:
         default:
             return @"Unknown iOS device";
@@ -277,9 +283,16 @@
         NSInteger submodel = [self ec_getSubmodel:platformString];
         if (submodel < 4) {
             return UIDeviceiPadAir;
-        } else {
+        } else if (submodel < 7) {
             return UIDeviceiPadMiniRetina;
+        } else {
+            return UIDeviceiPadMini3;
         }
+    }
+
+    if ([platformString hasPrefix:@"iPad5"]) {
+        return UIDeviceiPadAir2;
+
     }
 
     // Unknown device

@@ -43,8 +43,10 @@ typedef NS_ENUM(NSUInteger, UIDevicePlatform) {
     UIDeviceiPad3,
     UIDeviceiPad4G,
     UIDeviceiPadAir,
+    UIDeviceiPadAir2,
     UIDeviceiPadMini,
     UIDeviceiPadMiniRetina,
+    UIDeviceiPadMini3,
 };
 
 
