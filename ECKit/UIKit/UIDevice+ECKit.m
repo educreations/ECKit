@@ -210,7 +210,7 @@
 #pragma mark Private Helpers
 
 /**
- * Find the platform string here: http://www.everymac.com/systems/apple/ipad/index-ipad-specs.html
+ * Find the platform string here: http://theiphonewiki.com/wiki/Models
  *
  * @return UIDevicePlatform the platform this device represents.
  */
