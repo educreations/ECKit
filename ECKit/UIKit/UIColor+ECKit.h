@@ -14,9 +14,6 @@
 + (UIColor *)ec_colorWithHex:(UInt32)hex;
 + (UIColor *)ec_colorWithHexString:(NSString *)hex;
 
-+ (UIColor *)ec_colorWithAlphaHex:(UInt32)hex;
-+ (UIColor *)ec_colorWithAlphaHexString:(NSString *)hex;
-
 + (NSString *)ec_hexStringWithColor:(UIColor *)color;
 + (NSUInteger)ec_integerWithColor:(UIColor *)color;
 

@@ -36,32 +36,6 @@
 	return [UIColor ec_colorWithHex:hexadecimal];
 }
 
-+ (UIColor *)ec_colorWithAlphaHex:(UInt32)hex
-{
-	CGFloat red, green, blue, alpha;
-
-	alpha = (hex >> 24) & 0xFF;
-	red = (hex >> 16) & 0xFF;
-	green = (hex >> 8) & 0xFF;
-	blue = hex & 0xFF;
-
-    return [UIColor colorWithRed:red / 255.0f green:green / 255.0f blue:blue / 255.0f alpha:alpha / 255.0f];
-}
-
-+ (UIColor *)ec_colorWithAlphaHexString:(NSString *)hex
-{
-	const char *cString = [hex cStringUsingEncoding:NSASCIIStringEncoding];
-	unsigned int hexadecimal;
-
-	if (cString[0] == '#') {
-		hexadecimal = (unsigned int)strtol(cString + 1, NULL, 16);
-	} else {
-		hexadecimal = (unsigned int)strtol(cString, NULL, 16);
-	}
-
-	return [UIColor ec_colorWithAlphaHex:hexadecimal];
-}
-
 + (NSString *)ec_hexStringWithColor:(UIColor *)color
 {
 	const CGFloat *components = CGColorGetComponents([color CGColor]);
