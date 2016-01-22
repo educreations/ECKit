@@ -64,6 +64,8 @@
         case UIDeviceiPadMiniRetina:
         case UIDeviceiPadMini3:
         case UIDeviceiPadSimulator:
+        case UIDeviceiPadMini4:
+        case UIDeviceiPadPro:
         case UIDeviceUnknowniPad:
             return UIDeviceFamilyiPad;
         case UIDeviceiPhone1:
@@ -72,6 +74,12 @@
         case UIDeviceiPhone4:
         case UIDeviceiPhone4S:
         case UIDeviceiPhone5:
+        case UIDeviceiPhone5c:
+        case UIDeviceiPhone5s:
+        case UIDeviceiPhone6:
+        case UIDeviceiPhone6s:
+        case UIDeviceiPhone6Plus:
+        case UIDeviceiPhone6sPlus:
         case UIDeviceiPhoneSimulator:
         case UIDeviceUnknowniPhone:
             return UIDeviceFamilyiPhone;
@@ -131,16 +139,8 @@
 - (NSString *)ec_platformName
 {
     switch ([self ec_platform]) {
-        case UIDeviceUnknowniPhone:
-            return @"Unknown iPhone";
-        case UIDeviceUnknowniPod:
-            return @"Unknown iPod";
-        case UIDeviceUnknowniPad:
-            return @"Unknown iPad";
         case UIDeviceiPhoneSimulator:
             return @"iPhone Simulator";
-        case UIDeviceiPadSimulator:
-            return @"iPad Simulator";
         case UIDeviceiPhone1:
             return @"iPhone 1";
         case UIDeviceiPhone3G:
@@ -153,6 +153,21 @@
             return @"iPhone 4S";
         case UIDeviceiPhone5:
             return @"iPhone 5";
+        case UIDeviceiPhone5c:
+            return @"iPhone 5c";
+        case UIDeviceiPhone5s:
+            return @"iPhone 5s";
+        case UIDeviceiPhone6:
+            return @"iPhone 6";
+        case UIDeviceiPhone6s:
+            return @"iPhone 6s";
+        case UIDeviceiPhone6Plus:
+            return @"iPhone 6 Plus";
+        case UIDeviceiPhone6sPlus:
+            return @"iPhone 6s Plus";
+        case UIDeviceUnknowniPhone:
+            return @"Unknown iPhone";
+
         case UIDeviceiPod1:
             return @"iPod 1";
         case UIDeviceiPod2:
@@ -163,6 +178,11 @@
             return @"iPod 4";
         case UIDeviceiPod5:
             return @"iPod 5";
+        case UIDeviceUnknowniPod:
+            return @"Unknown iPod";
+
+        case UIDeviceiPadSimulator:
+            return @"iPad Simulator";
         case UIDeviceiPad1:
             return @"iPad 1";
         case UIDeviceiPad2:
@@ -181,6 +201,13 @@
             return @"iPad Mini Retina";
         case UIDeviceiPadMini3:
             return @"iPad Mini 3";
+        case UIDeviceiPadMini4:
+            return @"iPad Mini 4";
+        case UIDeviceiPadPro:
+            return @"iPad Pro";
+        case UIDeviceUnknowniPad:
+            return @"Unknown iPad";
+
         case UIDeviceUnknown:
         default:
             return @"Unknown iOS device";
