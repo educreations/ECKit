@@ -235,7 +235,31 @@
         return UIDeviceiPhone4S;
     }
     if ([platformString hasPrefix:@"iPhone5"]) {
-        return UIDeviceiPhone5;
+        NSInteger submodel = [self ec_getSubmodel:platformString];
+        if (submodel <= 2) {
+            return UIDeviceiPhone5;
+        } else {
+            return UIDeviceiPhone5c;
+        }
+    }
+    if ([platformString hasPrefix:@"iPhone6"]) {
+        return UIDeviceiPhone5s;
+    }
+    if ([platformString hasPrefix:@"iPhone7"]) {
+        NSInteger submodel = [self ec_getSubmodel:platformString];
+        if (submodel <= 1) {
+            return UIDeviceiPhone6Plus;
+        } else {
+            return UIDeviceiPhone6;
+        }
+    }
+    if ([platformString hasPrefix:@"iPhone8"]) {
+        NSInteger submodel = [self ec_getSubmodel:platformString];
+        if (submodel <= 1) {
+            return UIDeviceiPhone6s;
+        } else {
+            return UIDeviceiPhone6sPlus;
+        }
     }
 
     // iPod
@@ -291,8 +315,16 @@
     }
 
     if ([platformString hasPrefix:@"iPad5"]) {
-        return UIDeviceiPadAir2;
+        NSInteger submodel = [self ec_getSubmodel:platformString];
+        if (submodel < 3) {
+            return UIDeviceiPadMini4;
+        } else {
+            return UIDeviceiPadAir2;
+        }
+    }
 
+    if ([platformString hasPrefix:@"iPad6"]) {
+        return UIDeviceiPadPro;
     }
 
     // Unknown device
