@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'ECKit'
-  s.version = '0.5.0'
+  s.version = '0.5.1'
   s.summary = "Educreations’ collection of Cocoa categories and utilities."
 
   s.homepage = 'https://github.com/educreations/ECKit'
