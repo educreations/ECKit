@@ -17,7 +17,7 @@ frameworks like Foundation and UIKit.
 
 ## Installation
 
-Installation is done via [Cocoapods][cocoapods]. Add:
+Installation is done via [CocoaPods][cocoapods]. Add:
 
 ```ruby
 pod 'ECKit'
