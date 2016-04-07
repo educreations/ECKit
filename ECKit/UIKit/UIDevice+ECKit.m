@@ -65,7 +65,8 @@
         case UIDeviceiPadMini3:
         case UIDeviceiPadSimulator:
         case UIDeviceiPadMini4:
-        case UIDeviceiPadPro:
+        case UIDeviceiPadPro12inch:
+        case UIDeviceiPadPro9inch:
         case UIDeviceUnknowniPad:
             return UIDeviceFamilyiPad;
         case UIDeviceiPhone1:
@@ -165,6 +166,8 @@
             return @"iPhone 6 Plus";
         case UIDeviceiPhone6sPlus:
             return @"iPhone 6s Plus";
+        case UIDeviceiPhoneSE:
+            return @"iPhone SE";
         case UIDeviceUnknowniPhone:
             return @"Unknown iPhone";
 
@@ -203,8 +206,10 @@
             return @"iPad Mini 3";
         case UIDeviceiPadMini4:
             return @"iPad Mini 4";
-        case UIDeviceiPadPro:
-            return @"iPad Pro";
+        case UIDeviceiPadPro12inch:
+            return @"iPad Pro 12 inch";
+        case UIDeviceiPadPro9inch:
+            return @"iPad Pro 9 inch";
         case UIDeviceUnknowniPad:
             return @"Unknown iPad";
 
@@ -284,8 +289,10 @@
         NSInteger submodel = [self ec_getSubmodel:platformString];
         if (submodel <= 1) {
             return UIDeviceiPhone6s;
-        } else {
+        } else if (submodel < 4) {
             return UIDeviceiPhone6sPlus;
+        } else {
+            return UIDeviceiPhoneSE;
         }
     }
 
@@ -351,7 +358,12 @@
     }
 
     if ([platformString hasPrefix:@"iPad6"]) {
-        return UIDeviceiPadPro;
+        NSInteger submodel = [self ec_getSubmodel:platformString];
+        if (submodel < 7) {
+            return UIDeviceiPadPro9inch;
+        } else {
+            return UIDeviceiPadPro12inch;
+        }
     }
 
     // Unknown device
