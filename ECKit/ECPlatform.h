@@ -9,13 +9,13 @@
 @import Foundation;
 
 
-NSURL *ECDocumentsURL();
-NSString *ECDocumentsPath();
+NSURL *ECDocumentsURL(void);
+NSString *ECDocumentsPath(void);
 
-NSURL *ECLibraryURL();
-NSString *ECLibraryPath();
+NSURL *ECLibraryURL(void);
+NSString *ECLibraryPath(void);
 
-NSURL *ECCachesURL();
-NSString *ECCachesPath();
+NSURL *ECCachesURL(void);
+NSString *ECCachesPath(void);
 
-NSString *ECBundlePath();
+NSString *ECBundlePath(void);

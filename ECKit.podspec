@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'ECKit'
-  s.version = '0.5.2'
+  s.version = '0.5.3'
   s.summary = "Educreations’ collection of Cocoa categories and utilities."
 
   s.homepage = 'https://github.com/educreations/ECKit'
@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.source_files  = 'ECKit/**/*.{h,m}'
 
   s.requires_arc = true
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '8.0'
 end
