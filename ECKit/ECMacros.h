@@ -32,6 +32,7 @@
 #pragma mark -
 #pragma mark Assertions
 
+#ifndef ECAssert
 #if DEBUG
 # define ECAssert( ... )                            NSAssert(__VA_ARGS__)
 #else
@@ -44,8 +45,15 @@
         __PRAGMA_POP_NO_EXTRA_ARG_WARNINGS \
     } while(0)
 #endif
+#endif
 
-#define ECParameterAssert(condition)                ECAssert((condition), @"Invalid parameter not satisfying: %s", #condition)
+#ifndef ECParameterAssert
+# define ECParameterAssert(condition)               ECAssert((condition), @"Invalid parameter not satisfying: %s", #condition)
+#endif
 
-#define ECAssertMainThread()                        ECAssert([NSThread isMainThread], @"Not running on the main thread!")
-#define ECAssertNotMainThread()                     ECAssert(![NSThread isMainThread], @"Running on the main thread!")
+#ifndef ECAssertMainThread
+# define ECAssertMainThread()                       ECAssert([NSThread isMainThread], @"Not running on the main thread!")
+#endif
+#ifndef ECAssertNotMainThread
+# define ECAssertNotMainThread()                    ECAssert(![NSThread isMainThread], @"Running on the main thread!")
+#endif
