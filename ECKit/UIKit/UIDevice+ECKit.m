@@ -210,6 +210,21 @@
             return @"iPad Pro 12 inch";
         case UIDeviceiPadPro9inch:
             return @"iPad Pro 9 inch";
+        case UIDeviceiPad5:
+            return @"iPad 5";
+        case UIDeviceiPadPro12inch2:
+            return @"iPad Pro 12 inch 2";
+        case UIDeviceiPadPro10inch:
+            return @"iPad Pro 10.5 inch";
+        case UIDeviceiPad6:
+            return @"iPad 6";
+        case UIDeviceiPadPro11inch:
+            return @"iPad Pro 11 inch";
+        case UIDeviceiPadPro12inch3:
+            return @"iPad Pro 12 inch 3";
+        case UIDeviceiPadAir3:
+            return @"iPad Air 3";
+
         case UIDeviceUnknowniPad:
             return @"Unknown iPad";
 
