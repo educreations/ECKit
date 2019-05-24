@@ -359,10 +359,64 @@
 
     if ([platformString hasPrefix:@"iPad6"]) {
         NSInteger submodel = [self ec_getSubmodel:platformString];
-        if (submodel < 7) {
-            return UIDeviceiPadPro9inch;
-        } else {
-            return UIDeviceiPadPro12inch;
+        switch (submodel) {
+            case 3:
+            case 4:
+                return UIDeviceiPadPro9inch;
+            case 7:
+            case 8:
+                return UIDeviceiPadPro12inch;
+            case 11:
+            case 12:
+                return UIDeviceiPad5;
+            default:
+                break;
+        }
+    }
+
+    if ([platformString hasPrefix:@"iPad7"]) {
+        NSInteger submodel = [self ec_getSubmodel:platformString];
+        switch (submodel) {
+            case 1:
+            case 2:
+                return UIDeviceiPadPro12inch2;
+            case 3:
+            case 4:
+                return UIDeviceiPadPro10inch;
+            case 5:
+            case 6:
+                return UIDeviceiPad6;
+            default:
+                break;
+        }
+    }
+
+    if ([platformString hasPrefix:@"iPad8"]) {
+        NSInteger submodel = [self ec_getSubmodel:platformString];
+        switch (submodel) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+                return UIDeviceiPadPro11inch;
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+                return UIDeviceiPadPro12inch3;
+            default:
+                break;
+        }
+    }
+
+    if ([platformString hasPrefix:@"iPad11"]) {
+        NSInteger submodel = [self ec_getSubmodel:platformString];
+        switch (submodel) {
+            case 3:
+            case 4:
+                return UIDeviceiPadAir3;
+            default:
+                break;
         }
     }
 

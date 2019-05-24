@@ -57,6 +57,13 @@ typedef NS_ENUM(NSUInteger, UIDevicePlatform) {
     UIDeviceiPadMini4,
     UIDeviceiPadPro12inch,
     UIDeviceiPadPro9inch,
+    UIDeviceiPad5,
+    UIDeviceiPadPro12inch2,
+    UIDeviceiPadPro10inch,
+    UIDeviceiPad6,
+    UIDeviceiPadPro11inch,
+    UIDeviceiPadPro12inch3,
+    UIDeviceiPadAir3,
 };
 
 
