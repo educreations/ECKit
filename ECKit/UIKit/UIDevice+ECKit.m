@@ -263,7 +263,11 @@
  */
 - (UIDevicePlatform)ec_internalPlatform
 {
+#if !(TARGET_IPHONE_SIMULATOR)
     NSString *platformString = [self ec_getSysInfoByName:"hw.machine"];
+#else
+    NSString *platformString = [[[NSProcessInfo processInfo] environment] objectForKey:@"SIMULATOR_MODEL_IDENTIFIER"] ?: @"";
+#endif
 
     // iPhone
     if ([platformString isEqualToString:@"iPhone1,1"]) {
