@@ -65,6 +65,7 @@
         case UIDeviceiPadMini3:
         case UIDeviceiPadSimulator:
         case UIDeviceiPadMini4:
+        case UIDeviceiPadMini5:
         case UIDeviceiPadPro12inch:
         case UIDeviceiPadPro9inch:
         case UIDeviceUnknowniPad:
@@ -206,6 +207,8 @@
             return @"iPad Mini 3";
         case UIDeviceiPadMini4:
             return @"iPad Mini 4";
+        case UIDeviceiPadMini5:
+            return @"iPad Mini 5";
         case UIDeviceiPadPro12inch:
             return @"iPad Pro 12 inch";
         case UIDeviceiPadPro9inch:
@@ -431,6 +434,9 @@
     if ([platformString hasPrefix:@"iPad11"]) {
         NSInteger submodel = [self ec_getSubmodel:platformString];
         switch (submodel) {
+            case 1:
+            case 2:
+                return UIDeviceiPadMini5;
             case 3:
             case 4:
                 return UIDeviceiPadAir3;

@@ -55,6 +55,7 @@ typedef NS_ENUM(NSUInteger, UIDevicePlatform) {
     UIDeviceiPadMiniRetina,
     UIDeviceiPadMini3,
     UIDeviceiPadMini4,
+    UIDeviceiPadMini5,
     UIDeviceiPadPro12inch,
     UIDeviceiPadPro9inch,
     UIDeviceiPad5,
