@@ -1,0 +1,28 @@
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+# can also be listed using the `fastlane actions` command
+
+# Disable GH Issue search
+ENV["FASTLANE_HIDE_GITHUB_ISSUES"] = "1"
+
+default_platform :ios
+
+platform :ios do
+  before_all do
+    # Opt out of usage stats
+    opt_out_usage
+  end
+
+  desc "Bump minor version"
+  lane :bump_version do
+    ensure_git_status_clean
+
+    # Get the new version
+    version = version_bump_podspec(path: "ECKit.podspec", bump_type: "patch")
+
+    git_commit(path: "ECKit.podspec", message: "Version Bump")
+
+    add_git_tag(tag: "#{version}", force: true)
+  end
+end
