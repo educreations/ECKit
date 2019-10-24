@@ -11,43 +11,43 @@
 
 @implementation UIColor (ECKit)
 
-+ (UIColor *)ec_colorWithHex:(UInt32)hex
++ (UIColor *)eckit_colorWithHex:(UInt32)hex
 {
-	CGFloat red, green, blue;
+    CGFloat red, green, blue;
 
-	red = (hex >> 16) & 0xFF;
-	green = (hex >> 8) & 0xFF;
-	blue = hex & 0xFF;
+    red = (hex >> 16) & 0xFF;
+    green = (hex >> 8) & 0xFF;
+    blue = hex & 0xFF;
 
     return [UIColor colorWithRed:red / 255.0f green:green / 255.0f blue:blue / 255.0f alpha:1.0f];
 }
 
-+ (UIColor *)ec_colorWithHexString:(NSString *)hex
++ (UIColor *)eckit_colorWithHexString:(NSString *)hex
 {
-	const char *cString = [hex cStringUsingEncoding:NSASCIIStringEncoding];
-	unsigned int hexadecimal;
+    const char *cString = [hex cStringUsingEncoding:NSASCIIStringEncoding];
+    unsigned int hexadecimal;
 
-	if (cString[0] == '#') {
-		hexadecimal = (unsigned int)strtol(cString + 1, NULL, 16);
-	} else {
-		hexadecimal = (unsigned int)strtol(cString, NULL, 16);
-	}
+    if (cString[0] == '#') {
+        hexadecimal = (unsigned int)strtol(cString + 1, NULL, 16);
+    } else {
+        hexadecimal = (unsigned int)strtol(cString, NULL, 16);
+    }
 
-	return [UIColor ec_colorWithHex:hexadecimal];
+    return [UIColor eckit_colorWithHex:hexadecimal];
 }
 
-+ (NSString *)ec_hexStringWithColor:(UIColor *)color
++ (NSString *)eckit_hexStringWithColor:(UIColor *)color
 {
-	const CGFloat *components = CGColorGetComponents([color CGColor]);
-	NSString *hexadecimal = [NSString stringWithFormat:@"#%02X%02X%02X",
+    const CGFloat *components = CGColorGetComponents([color CGColor]);
+    NSString *hexadecimal = [NSString stringWithFormat:@"#%02X%02X%02X",
                              (unsigned int)(255 * components[0]),
                              (unsigned int)(255 * components[1]),
                              (unsigned int)(255 * components[2])];
 
-	return hexadecimal;
+    return hexadecimal;
 }
 
-+ (NSUInteger)ec_integerWithColor:(UIColor *)color
++ (NSUInteger)eckit_integerWithColor:(UIColor *)color
 {
     CGFloat red, green, blue;
     if (CGColorGetNumberOfComponents([color CGColor]) == 4) {

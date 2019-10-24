@@ -11,7 +11,7 @@
 
 @implementation UIView (ECKit)
 
-- (UIImage *)ec_imageFromView
+- (UIImage *)eckit_imageFromView
 {
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, 0);
     if ([self isKindOfClass:[UIScrollView class]]) {
@@ -26,7 +26,7 @@
 }
 
 #if DEBUG
-- (id)debugQuickLookObject
+- (id)eckit_debugQuickLookObject
 {
     if (CGRectGetWidth(self.bounds) < 0.0f || CGRectGetWidth(self.bounds) < 0.0f) {
         return nil;

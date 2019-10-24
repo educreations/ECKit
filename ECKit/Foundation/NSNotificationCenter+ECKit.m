@@ -10,15 +10,15 @@
 
 @implementation NSNotificationCenter (ECKit)
 
-- (void)ec_postNotificationNameOnMainThread:(NSString *)notificationName object:(id)obj userInfo:(NSDictionary *)userInfo
+- (void)eckit_postNotificationNameOnMainThread:(NSString *)notificationName object:(id)obj userInfo:(NSDictionary *)userInfo
 {
-	if (![NSThread isMainThread]) {
-		dispatch_async(dispatch_get_main_queue(), ^{
-			[self postNotificationName:notificationName object:obj userInfo:userInfo];
-		});
-	} else {
-		[self postNotificationName:notificationName object:obj userInfo:userInfo];
-	}
+    if (![NSThread isMainThread]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self postNotificationName:notificationName object:obj userInfo:userInfo];
+        });
+    } else {
+        [self postNotificationName:notificationName object:obj userInfo:userInfo];
+    }
 }
 
 @end

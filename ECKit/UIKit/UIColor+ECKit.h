@@ -11,10 +11,10 @@
 
 @interface UIColor (ECKit)
 
-+ (UIColor *)ec_colorWithHex:(UInt32)hex;
-+ (UIColor *)ec_colorWithHexString:(NSString *)hex;
++ (UIColor *)eckit_colorWithHex:(UInt32)hex;
++ (UIColor *)eckit_colorWithHexString:(NSString *)hex;
 
-+ (NSString *)ec_hexStringWithColor:(UIColor *)color;
-+ (NSUInteger)ec_integerWithColor:(UIColor *)color;
++ (NSString *)eckit_hexStringWithColor:(UIColor *)color;
++ (NSUInteger)eckit_integerWithColor:(UIColor *)color;
 
 @end

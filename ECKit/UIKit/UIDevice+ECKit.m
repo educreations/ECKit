@@ -16,34 +16,34 @@
 
 @implementation UIDevice (ECKit)
 
-+ (NSComparisonResult)ec_compareToVersion:(NSString *)version
++ (NSComparisonResult)eckit_compareToVersion:(NSString *)version
 {
     return [[[self currentDevice] systemVersion] compare:version options:NSNumericSearch];
 }
 
-+ (BOOL)ec_systemVersionIsEqual:(NSString *)version
++ (BOOL)eckit_systemVersionIsEqual:(NSString *)version
 {
-    return [self ec_compareToVersion:version] == NSOrderedSame;
+    return [self eckit_compareToVersion:version] == NSOrderedSame;
 }
 
-+ (BOOL)ec_systemVersionIsGreaterThan:(NSString *)version
++ (BOOL)eckit_systemVersionIsGreaterThan:(NSString *)version
 {
-    return [self ec_compareToVersion:version] == NSOrderedDescending;
+    return [self eckit_compareToVersion:version] == NSOrderedDescending;
 }
 
-+ (BOOL)ec_systemVersionIsGreaterThanOrEqual:(NSString *)version
++ (BOOL)eckit_systemVersionIsGreaterThanOrEqual:(NSString *)version
 {
-    return [self ec_compareToVersion:version] != NSOrderedAscending;
+    return [self eckit_compareToVersion:version] != NSOrderedAscending;
 }
 
-+ (BOOL)ec_systemVersionIsLessThan:(NSString *)version
++ (BOOL)eckit_systemVersionIsLessThan:(NSString *)version
 {
-    return [self ec_compareToVersion:version] == NSOrderedAscending;
+    return [self eckit_compareToVersion:version] == NSOrderedAscending;
 }
 
-+ (BOOL)ec_systemVersionIsLessThanOrEqual:(NSString *)version
++ (BOOL)eckit_systemVersionIsLessThanOrEqual:(NSString *)version
 {
-    return [self ec_compareToVersion:version] != NSOrderedDescending;
+    return [self eckit_compareToVersion:version] != NSOrderedDescending;
 }
 
 
@@ -51,9 +51,9 @@
 #pragma mark -
 #pragma mark Device Family
 
-- (UIDeviceFamily)ec_deviceFamily
+- (UIDeviceFamily)eckit_deviceFamily
 {
-    switch ([self ec_platform]) {
+    switch ([self eckit_platform]) {
         case UIDeviceiPad1:
         case UIDeviceiPad2:
         case UIDeviceiPad4G:
@@ -98,24 +98,24 @@
     }
 }
 
-- (BOOL)ec_isIPadDeviceFamily
+- (BOOL)eckit_isIPadDeviceFamily
 {
-    return [self ec_deviceFamily] == UIDeviceFamilyiPad;
+    return [self eckit_deviceFamily] == UIDeviceFamilyiPad;
 }
 
-- (BOOL)ec_isIPhoneDeviceFamily
+- (BOOL)eckit_isIPhoneDeviceFamily
 {
-    return [self ec_deviceFamily] == UIDeviceFamilyiPhone;
+    return [self eckit_deviceFamily] == UIDeviceFamilyiPhone;
 }
 
-- (BOOL)ec_isIPodDeviceFamily
+- (BOOL)eckit_isIPodDeviceFamily
 {
-    return [self ec_deviceFamily] == UIDeviceFamilyiPod;
+    return [self eckit_deviceFamily] == UIDeviceFamilyiPod;
 }
 
-- (BOOL)ec_isSimulatorDeviceFamily
+- (BOOL)eckit_isSimulatorDeviceFamily
 {
-    switch ([self ec_platform]) {
+    switch ([self eckit_platform]) {
         case UIDeviceiPadSimulator:
         case UIDeviceiPhoneSimulator:
             return YES;
@@ -128,19 +128,19 @@
 #pragma mark -
 #pragma mark Platform
 
-- (UIDevicePlatform)ec_platform
+- (UIDevicePlatform)eckit_platform
 {
     static UIDevicePlatform p = UIDeviceUnknown;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        p = [self ec_internalPlatform];
+        p = [self eckit_internalPlatform];
     });
     return p;
 }
 
-- (NSString *)ec_platformName
+- (NSString *)eckit_platformName
 {
-    switch ([self ec_platform]) {
+    switch ([self eckit_platform]) {
         case UIDeviceiPhoneSimulator:
             return @"iPhone Simulator";
         case UIDeviceiPhone1:
@@ -242,13 +242,13 @@
 #pragma mark -
 #pragma mark Misc
 
-- (BOOL)ec_isIPad1
+- (BOOL)eckit_isIPad1
 {
     static BOOL isIPad1;
 
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        isIPad1 = [self ec_platform] == UIDeviceiPad1;
+        isIPad1 = [self eckit_platform] == UIDeviceiPad1;
     });
 
     return isIPad1;
@@ -264,10 +264,10 @@
  *
  * @return UIDevicePlatform the platform this device represents.
  */
-- (UIDevicePlatform)ec_internalPlatform
+- (UIDevicePlatform)eckit_internalPlatform
 {
 #if !(TARGET_IPHONE_SIMULATOR)
-    NSString *platformString = [self ec_getSysInfoByName:"hw.machine"];
+    NSString *platformString = [self eckit_getSysInfoByName:"hw.machine"];
 #else
     NSString *platformString = [[[NSProcessInfo processInfo] environment] objectForKey:@"SIMULATOR_MODEL_IDENTIFIER"] ?: @"";
 #endif
@@ -289,7 +289,7 @@
         return UIDeviceiPhone4S;
     }
     if ([platformString hasPrefix:@"iPhone5"]) {
-        NSInteger submodel = [self ec_getSubmodel:platformString];
+        NSInteger submodel = [self eckit_getSubmodel:platformString];
         if (submodel <= 2) {
             return UIDeviceiPhone5;
         } else {
@@ -300,7 +300,7 @@
         return UIDeviceiPhone5s;
     }
     if ([platformString hasPrefix:@"iPhone7"]) {
-        NSInteger submodel = [self ec_getSubmodel:platformString];
+        NSInteger submodel = [self eckit_getSubmodel:platformString];
         if (submodel <= 1) {
             return UIDeviceiPhone6Plus;
         } else {
@@ -308,7 +308,7 @@
         }
     }
     if ([platformString hasPrefix:@"iPhone8"]) {
-        NSInteger submodel = [self ec_getSubmodel:platformString];
+        NSInteger submodel = [self eckit_getSubmodel:platformString];
         if (submodel <= 1) {
             return UIDeviceiPhone6s;
         } else if (submodel < 4) {
@@ -343,7 +343,7 @@
         return UIDeviceiPad1;
     }
     if ([platformString hasPrefix:@"iPad2"]) {
-        NSInteger submodel = [self ec_getSubmodel:platformString];
+        NSInteger submodel = [self eckit_getSubmodel:platformString];
         if (submodel <= 4) {
             return UIDeviceiPad2;
         } else {
@@ -351,7 +351,7 @@
         }
     }
     if ([platformString hasPrefix:@"iPad3"]) {
-        NSInteger submodel = [self ec_getSubmodel:platformString];
+        NSInteger submodel = [self eckit_getSubmodel:platformString];
         if (submodel <= 3) {
             return UIDeviceiPad3;
         } else {
@@ -360,7 +360,7 @@
     }
 
     if ([platformString hasPrefix:@"iPad4"]) {
-        NSInteger submodel = [self ec_getSubmodel:platformString];
+        NSInteger submodel = [self eckit_getSubmodel:platformString];
         if (submodel < 4) {
             return UIDeviceiPadAir;
         } else if (submodel < 7) {
@@ -371,7 +371,7 @@
     }
 
     if ([platformString hasPrefix:@"iPad5"]) {
-        NSInteger submodel = [self ec_getSubmodel:platformString];
+        NSInteger submodel = [self eckit_getSubmodel:platformString];
         if (submodel < 3) {
             return UIDeviceiPadMini4;
         } else {
@@ -380,7 +380,7 @@
     }
 
     if ([platformString hasPrefix:@"iPad6"]) {
-        NSInteger submodel = [self ec_getSubmodel:platformString];
+        NSInteger submodel = [self eckit_getSubmodel:platformString];
         switch (submodel) {
             case 3:
             case 4:
@@ -397,7 +397,7 @@
     }
 
     if ([platformString hasPrefix:@"iPad7"]) {
-        NSInteger submodel = [self ec_getSubmodel:platformString];
+        NSInteger submodel = [self eckit_getSubmodel:platformString];
         switch (submodel) {
             case 1:
             case 2:
@@ -414,7 +414,7 @@
     }
 
     if ([platformString hasPrefix:@"iPad8"]) {
-        NSInteger submodel = [self ec_getSubmodel:platformString];
+        NSInteger submodel = [self eckit_getSubmodel:platformString];
         switch (submodel) {
             case 1:
             case 2:
@@ -432,7 +432,7 @@
     }
 
     if ([platformString hasPrefix:@"iPad11"]) {
-        NSInteger submodel = [self ec_getSubmodel:platformString];
+        NSInteger submodel = [self eckit_getSubmodel:platformString];
         switch (submodel) {
             case 1:
             case 2:
@@ -465,7 +465,7 @@
     return UIDeviceUnknown;
 }
 
-- (NSString *)ec_getSysInfoByName:(char *)typeSpecifier
+- (NSString *)eckit_getSysInfoByName:(char *)typeSpecifier
 {
     size_t size;
     sysctlbyname(typeSpecifier, NULL, &size, NULL, 0);
@@ -480,7 +480,7 @@
     return results;
 }
 
-- (NSInteger)ec_getSubmodel:(NSString *)platform
+- (NSInteger)eckit_getSubmodel:(NSString *)platform
 {
     NSInteger submodel = -1;
 

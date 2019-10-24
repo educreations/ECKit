@@ -11,12 +11,12 @@
 
 @implementation UIScreen (ECKit)
 
-- (BOOL)ec_isRetina
+- (BOOL)eckit_isRetina
 {
     return (self.scale == 2.0);
 }
 
-- (BOOL)ec_isWidescreen
+- (BOOL)eckit_isWidescreen
 {
     return (fabs((double)CGRectGetHeight(self.bounds) - (double )568) < DBL_EPSILON);
 }

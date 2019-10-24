@@ -10,9 +10,9 @@
 
 @interface NSData (ECKit)
 
-- (NSData *)ec_md5Hash;
-- (NSString *)ec_md5HashString;
+- (NSData *)eckit_md5Hash;
+- (NSString *)eckit_md5HashString;
 
-- (NSString *)ec_hexadecimalString;
+- (NSString *)eckit_hexadecimalString;
 
 @end

@@ -11,8 +11,8 @@
 
 @interface UIApplication (ECKit)
 
-+ (NSString *)ec_displayName;
-+ (NSString *)ec_version;
-+ (NSString *)ec_buildVersion;
++ (NSString *)eckit_displayName;
++ (NSString *)eckit_version;
++ (NSString *)eckit_buildVersion;
 
 @end

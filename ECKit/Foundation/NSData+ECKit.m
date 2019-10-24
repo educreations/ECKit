@@ -12,7 +12,7 @@
 
 @implementation NSData (ECKit)
 
-- (NSData *)ec_md5Hash
+- (NSData *)eckit_md5Hash
 {
     // Create byte array of unsigned chars
     unsigned char md5Buffer[CC_MD5_DIGEST_LENGTH];
@@ -23,12 +23,12 @@
     return [NSData dataWithBytes:(const void *)md5Buffer length:CC_MD5_DIGEST_LENGTH];
 }
 
-- (NSString *)ec_md5HashString
+- (NSString *)eckit_md5HashString
 {
-    return [[self ec_md5Hash] ec_hexadecimalString];
+    return [[self eckit_md5Hash] eckit_hexadecimalString];
 }
 
-- (NSString *)ec_hexadecimalString
+- (NSString *)eckit_hexadecimalString
 {
     if (self.length < 1) {
         return nil;
@@ -38,11 +38,11 @@
     NSUInteger numberOfBytes = self.length;
 
     NSMutableString *s = [NSMutableString stringWithCapacity:numberOfBytes * 2];
-	for (NSUInteger i = 0; i < numberOfBytes; i++) {
+    for (NSUInteger i = 0; i < numberOfBytes; i++) {
         [s appendFormat:@"%02x", bytes[i]];
-	}
+    }
 
-	return [s copy];
+    return [s copy];
 }
 
 @end

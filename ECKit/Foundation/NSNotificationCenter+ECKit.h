@@ -10,6 +10,6 @@
 
 @interface NSNotificationCenter (ECKit)
 
-- (void)ec_postNotificationNameOnMainThread:(NSString *)notificationName object:(id)obj userInfo:(NSDictionary *)userInfo;
+- (void)eckit_postNotificationNameOnMainThread:(NSString *)notificationName object:(id)obj userInfo:(NSDictionary *)userInfo;
 
 @end

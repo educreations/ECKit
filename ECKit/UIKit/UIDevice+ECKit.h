@@ -70,21 +70,21 @@ typedef NS_ENUM(NSUInteger, UIDevicePlatform) {
 
 @interface UIDevice (ECKit)
 
-+ (BOOL)ec_systemVersionIsEqual:(NSString *)version;
-+ (BOOL)ec_systemVersionIsGreaterThan:(NSString *)version;
-+ (BOOL)ec_systemVersionIsGreaterThanOrEqual:(NSString *)version;
-+ (BOOL)ec_systemVersionIsLessThan:(NSString *)version;
-+ (BOOL)ec_systemVersionIsLessThanOrEqual:(NSString *)version;
++ (BOOL)eckit_systemVersionIsEqual:(NSString *)version;
++ (BOOL)eckit_systemVersionIsGreaterThan:(NSString *)version;
++ (BOOL)eckit_systemVersionIsGreaterThanOrEqual:(NSString *)version;
++ (BOOL)eckit_systemVersionIsLessThan:(NSString *)version;
++ (BOOL)eckit_systemVersionIsLessThanOrEqual:(NSString *)version;
 
-- (UIDeviceFamily)ec_deviceFamily;
-- (BOOL)ec_isIPadDeviceFamily;
-- (BOOL)ec_isIPhoneDeviceFamily;
-- (BOOL)ec_isIPodDeviceFamily;
-- (BOOL)ec_isSimulatorDeviceFamily;
+- (UIDeviceFamily)eckit_deviceFamily;
+- (BOOL)eckit_isIPadDeviceFamily;
+- (BOOL)eckit_isIPhoneDeviceFamily;
+- (BOOL)eckit_isIPodDeviceFamily;
+- (BOOL)eckit_isSimulatorDeviceFamily;
 
-- (UIDevicePlatform)ec_platform;
-- (NSString *)ec_platformName;
+- (UIDevicePlatform)eckit_platform;
+- (NSString *)eckit_platformName;
 
-- (BOOL)ec_isIPad1;
+- (BOOL)eckit_isIPad1;
 
 @end

@@ -11,7 +11,7 @@
 
 @interface UIScreen (ECKit)
 
-- (BOOL)ec_isRetina;
-- (BOOL)ec_isWidescreen;
+- (BOOL)eckit_isRetina;
+- (BOOL)eckit_isWidescreen;
 
 @end

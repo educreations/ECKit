@@ -10,7 +10,7 @@
 
 @implementation NSMutableArray (ECKit)
 
-- (void)ec_safeAddObject:(id)obj
+- (void)eckit_safeAddObject:(id)obj
 {
     if (obj != nil) {
         [self addObject:obj];

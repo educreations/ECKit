@@ -35,14 +35,10 @@
 		D96F515818CF7908005BCAF7 /* UIColor+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F513F18CF7908005BCAF7 /* UIColor+ECKit.m */; };
 		D96F515918CF7908005BCAF7 /* UIDevice+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514118CF7908005BCAF7 /* UIDevice+ECKit.m */; };
 		D96F515A18CF7908005BCAF7 /* UIDevice+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514118CF7908005BCAF7 /* UIDevice+ECKit.m */; };
-		D96F515B18CF7908005BCAF7 /* UIImage+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514318CF7908005BCAF7 /* UIImage+ECKit.m */; };
-		D96F515C18CF7908005BCAF7 /* UIImage+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514318CF7908005BCAF7 /* UIImage+ECKit.m */; };
 		D96F515D18CF7908005BCAF7 /* UIScreen+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514618CF7908005BCAF7 /* UIScreen+ECKit.m */; };
 		D96F515E18CF7908005BCAF7 /* UIScreen+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514618CF7908005BCAF7 /* UIScreen+ECKit.m */; };
 		D96F515F18CF7908005BCAF7 /* UIView+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514818CF7908005BCAF7 /* UIView+ECKit.m */; };
 		D96F516018CF7908005BCAF7 /* UIView+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514818CF7908005BCAF7 /* UIView+ECKit.m */; };
-		D96F516118CF7908005BCAF7 /* UIViewController+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514A18CF7908005BCAF7 /* UIViewController+ECKit.m */; };
-		D96F516218CF7908005BCAF7 /* UIViewController+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F514A18CF7908005BCAF7 /* UIViewController+ECKit.m */; };
 		D96F516818CF8D45005BCAF7 /* NSMutableArray+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F516718CF8D45005BCAF7 /* NSMutableArray+ECKit.m */; };
 		D96F516918CF8D45005BCAF7 /* NSMutableArray+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F516718CF8D45005BCAF7 /* NSMutableArray+ECKit.m */; };
 		D96F516C18CF8D53005BCAF7 /* NSMutableDictionary+ECKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D96F516B18CF8D53005BCAF7 /* NSMutableDictionary+ECKit.m */; };
@@ -99,15 +95,11 @@
 		D96F513F18CF7908005BCAF7 /* UIColor+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ECKit.m"; sourceTree = "<group>"; };
 		D96F514018CF7908005BCAF7 /* UIDevice+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ECKit.h"; sourceTree = "<group>"; };
 		D96F514118CF7908005BCAF7 /* UIDevice+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ECKit.m"; sourceTree = "<group>"; };
-		D96F514218CF7908005BCAF7 /* UIImage+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ECKit.h"; sourceTree = "<group>"; };
-		D96F514318CF7908005BCAF7 /* UIImage+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ECKit.m"; sourceTree = "<group>"; };
 		D96F514418CF7908005BCAF7 /* UIKit+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+ECKit.h"; sourceTree = "<group>"; };
 		D96F514518CF7908005BCAF7 /* UIScreen+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+ECKit.h"; sourceTree = "<group>"; };
 		D96F514618CF7908005BCAF7 /* UIScreen+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+ECKit.m"; sourceTree = "<group>"; };
 		D96F514718CF7908005BCAF7 /* UIView+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ECKit.h"; sourceTree = "<group>"; };
 		D96F514818CF7908005BCAF7 /* UIView+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ECKit.m"; sourceTree = "<group>"; };
-		D96F514918CF7908005BCAF7 /* UIViewController+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ECKit.h"; sourceTree = "<group>"; };
-		D96F514A18CF7908005BCAF7 /* UIViewController+ECKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ECKit.m"; sourceTree = "<group>"; };
 		D96F516318CF86C1005BCAF7 /* ECMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECMacros.h; sourceTree = "<group>"; };
 		D96F516518CF89D4005BCAF7 /* CoreGraphics+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreGraphics+ECKit.h"; sourceTree = "<group>"; };
 		D96F516618CF8D45005BCAF7 /* NSMutableArray+ECKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+ECKit.h"; sourceTree = "<group>"; };
@@ -263,15 +255,11 @@
 				D96F513F18CF7908005BCAF7 /* UIColor+ECKit.m */,
 				D96F514018CF7908005BCAF7 /* UIDevice+ECKit.h */,
 				D96F514118CF7908005BCAF7 /* UIDevice+ECKit.m */,
-				D96F514218CF7908005BCAF7 /* UIImage+ECKit.h */,
-				D96F514318CF7908005BCAF7 /* UIImage+ECKit.m */,
 				D96F514418CF7908005BCAF7 /* UIKit+ECKit.h */,
 				D96F514518CF7908005BCAF7 /* UIScreen+ECKit.h */,
 				D96F514618CF7908005BCAF7 /* UIScreen+ECKit.m */,
 				D96F514718CF7908005BCAF7 /* UIView+ECKit.h */,
 				D96F514818CF7908005BCAF7 /* UIView+ECKit.m */,
-				D96F514918CF7908005BCAF7 /* UIViewController+ECKit.h */,
-				D96F514A18CF7908005BCAF7 /* UIViewController+ECKit.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -345,6 +333,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = D93805CC18CF6F4E00FFF937;
@@ -397,10 +386,8 @@
 				D96F515518CF7908005BCAF7 /* UIApplication+ECKit.m in Sources */,
 				D96F515718CF7908005BCAF7 /* UIColor+ECKit.m in Sources */,
 				D96F515918CF7908005BCAF7 /* UIDevice+ECKit.m in Sources */,
-				D96F515B18CF7908005BCAF7 /* UIImage+ECKit.m in Sources */,
 				D96F515D18CF7908005BCAF7 /* UIScreen+ECKit.m in Sources */,
 				D96F515F18CF7908005BCAF7 /* UIView+ECKit.m in Sources */,
-				D96F516118CF7908005BCAF7 /* UIViewController+ECKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,10 +408,8 @@
 				D96F515618CF7908005BCAF7 /* UIApplication+ECKit.m in Sources */,
 				D96F515818CF7908005BCAF7 /* UIColor+ECKit.m in Sources */,
 				D96F515A18CF7908005BCAF7 /* UIDevice+ECKit.m in Sources */,
-				D96F515C18CF7908005BCAF7 /* UIImage+ECKit.m in Sources */,
 				D96F515E18CF7908005BCAF7 /* UIScreen+ECKit.m in Sources */,
 				D96F516018CF7908005BCAF7 /* UIView+ECKit.m in Sources */,
-				D96F516218CF7908005BCAF7 /* UIViewController+ECKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,6 @@
 
 @interface NSMutableDictionary (ECKit)
 
-- (void)ec_safeSetObject:(id)obj forKey:(id)key;
+- (void)eckit_safeSetObject:(id)obj forKey:(id)key;
 
 @end

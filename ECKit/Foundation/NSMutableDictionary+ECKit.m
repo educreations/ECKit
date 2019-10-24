@@ -10,11 +10,11 @@
 
 @implementation NSMutableDictionary (ECKit)
 
-- (void)ec_safeSetObject:(id)obj forKey:(id)key
+- (void)eckit_safeSetObject:(id)obj forKey:(id)key
 {
-	if (obj != nil && key != nil) {
-		[self setObject:obj forKey:key];
-	}
+    if (obj != nil && key != nil) {
+        [self setObject:obj forKey:key];
+    }
 }
 
 @end

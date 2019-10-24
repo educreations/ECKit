@@ -10,15 +10,15 @@
 
 @interface NSString (ECKit)
 
-+ (NSString *)ec_base36StringFromInteger:(NSInteger)number;
++ (NSString *)eckit_base36StringFromInteger:(NSInteger)number;
 
-- (NSData *)ec_md5Hash;
-- (NSString *)ec_md5HashString;
+- (NSData *)eckit_md5Hash;
+- (NSString *)eckit_md5HashString;
 
-- (NSString *)ec_lstrip;
-- (NSString *)ec_lstrip:(NSCharacterSet *)characterSet;
+- (NSString *)eckit_lstrip;
+- (NSString *)eckit_lstrip:(NSCharacterSet *)characterSet;
 
-- (NSString *)ec_rstrip;
-- (NSString *)ec_rstrip:(NSCharacterSet *)characterSet;
+- (NSString *)eckit_rstrip;
+- (NSString *)eckit_rstrip:(NSCharacterSet *)characterSet;
 
 @end

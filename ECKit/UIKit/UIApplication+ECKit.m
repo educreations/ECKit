@@ -11,17 +11,17 @@
 
 @implementation UIApplication (ECKit)
 
-+ (NSString *)ec_displayName
++ (NSString *)eckit_displayName
 {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
 }
 
-+ (NSString *)ec_version
++ (NSString *)eckit_version
 {
     return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
 }
 
-+ (NSString *)ec_buildVersion
++ (NSString *)eckit_buildVersion
 {
     NSString *build = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
 

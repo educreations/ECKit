@@ -11,6 +11,6 @@
 
 @interface UIView (ECKit)
 
-- (UIImage *)ec_imageFromView;
+- (UIImage *)eckit_imageFromView;
 
 @end

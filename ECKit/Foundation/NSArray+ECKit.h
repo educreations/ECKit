@@ -10,6 +10,6 @@
 
 @interface NSArray (ECKit)
 
-- (NSArray *)ec_mapObjectsUsingBlock:(id (^)(id obj, NSUInteger idx))block;
+- (NSArray *)eckit_mapObjectsUsingBlock:(id (^)(id obj, NSUInteger idx))block;
 
 @end

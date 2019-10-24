@@ -10,6 +10,6 @@
 
 @interface NSMutableArray (ECKit)
 
-- (void)ec_safeAddObject:(id)obj;
+- (void)eckit_safeAddObject:(id)obj;
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation NSDate (ECKit)
 
-+ (NSDate *)ec_dateFromRFC1123:(NSString *)value
++ (NSDate *)eckit_dateFromRFC1123:(NSString *)value
 {
     if (!value) {
         return nil;
@@ -54,7 +54,7 @@
     return [asctime dateFromString:value];
 }
 
-- (NSString*)ec_rfc1123String
+- (NSString*)eckit_rfc1123String
 {
     static NSDateFormatter *df = nil;
     if (df == nil) {

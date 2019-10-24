@@ -12,7 +12,7 @@
 
 @implementation NSString (ECKit)
 
-+ (NSString *)ec_base36StringFromInteger:(NSInteger)number
++ (NSString *)eckit_base36StringFromInteger:(NSInteger)number
 {
     static char table[] = "0123456789abcdefghijklmnopqrstuvwxyz";
 
@@ -30,24 +30,24 @@
     return result;
 }
 
-- (NSData *)ec_md5Hash
+- (NSData *)eckit_md5Hash
 {
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
 
-    return [data ec_md5Hash];
+    return [data eckit_md5Hash];
 }
 
-- (NSString *)ec_md5HashString
+- (NSString *)eckit_md5HashString
 {
-    return [[self ec_md5Hash] ec_hexadecimalString];
+    return [[self eckit_md5Hash] eckit_hexadecimalString];
 }
 
-- (NSString *)ec_lstrip
+- (NSString *)eckit_lstrip
 {
-    return [self ec_lstrip:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    return [self eckit_lstrip:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
-- (NSString *)ec_lstrip:(NSCharacterSet *)characterSet
+- (NSString *)eckit_lstrip:(NSCharacterSet *)characterSet
 {
     NSUInteger i = 0;
     NSUInteger length = [self length];
@@ -62,12 +62,12 @@
     return [self substringFromIndex:i];
 }
 
-- (NSString *)ec_rstrip
+- (NSString *)eckit_rstrip
 {
-    return [self ec_rstrip:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    return [self eckit_rstrip:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
-- (NSString *)ec_rstrip:(NSCharacterSet *)characterSet
+- (NSString *)eckit_rstrip:(NSCharacterSet *)characterSet
 {
     NSInteger i;
     NSUInteger length = [self length];
