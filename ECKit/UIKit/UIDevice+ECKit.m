@@ -138,6 +138,20 @@
     return p;
 }
 
+- (NSString *)eckit_platformString
+{
+    static NSString *platformString = @"";
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+#if !(TARGET_IPHONE_SIMULATOR)
+        platformString = [self eckit_getSysInfoByName:"hw.machine"];
+#else
+        platformString = [[[NSProcessInfo processInfo] environment] objectForKey:@"SIMULATOR_MODEL_IDENTIFIER"] ?: @"";
+#endif
+    });
+    return platformString;
+}
+
 - (NSString *)eckit_platformName
 {
     switch ([self eckit_platform]) {
@@ -266,11 +280,7 @@
  */
 - (UIDevicePlatform)eckit_internalPlatform
 {
-#if !(TARGET_IPHONE_SIMULATOR)
-    NSString *platformString = [self eckit_getSysInfoByName:"hw.machine"];
-#else
-    NSString *platformString = [[[NSProcessInfo processInfo] environment] objectForKey:@"SIMULATOR_MODEL_IDENTIFIER"] ?: @"";
-#endif
+    NSString *platformString = [self eckit_platformString];
 
     // iPhone
     if ([platformString isEqualToString:@"iPhone1,1"]) {

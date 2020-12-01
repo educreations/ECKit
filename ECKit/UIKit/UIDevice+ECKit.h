@@ -82,6 +82,7 @@ typedef NS_ENUM(NSUInteger, UIDevicePlatform) {
 - (BOOL)eckit_isIPodDeviceFamily;
 - (BOOL)eckit_isSimulatorDeviceFamily;
 
+- (NSString *)eckit_platformString;
 - (UIDevicePlatform)eckit_platform;
 - (NSString *)eckit_platformName;
 
