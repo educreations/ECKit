@@ -289,16 +289,16 @@
     if ([platformString isEqualToString:@"iPhone1,2"]) {
         return UIDeviceiPhone3G;
     }
-    if ([platformString hasPrefix:@"iPhone2"]) {
+    if ([platformString hasPrefix:@"iPhone2,"]) {
         return UIDeviceiPhone3GS;
     }
-    if ([platformString hasPrefix:@"iPhone3"]) {
+    if ([platformString hasPrefix:@"iPhone3,"]) {
         return UIDeviceiPhone4;
     }
-    if ([platformString hasPrefix:@"iPhone4"]) {
+    if ([platformString hasPrefix:@"iPhone4,"]) {
         return UIDeviceiPhone4S;
     }
-    if ([platformString hasPrefix:@"iPhone5"]) {
+    if ([platformString hasPrefix:@"iPhone5,"]) {
         NSInteger submodel = [self eckit_getSubmodel:platformString];
         if (submodel <= 2) {
             return UIDeviceiPhone5;
@@ -306,10 +306,10 @@
             return UIDeviceiPhone5c;
         }
     }
-    if ([platformString hasPrefix:@"iPhone6"]) {
+    if ([platformString hasPrefix:@"iPhone6,"]) {
         return UIDeviceiPhone5s;
     }
-    if ([platformString hasPrefix:@"iPhone7"]) {
+    if ([platformString hasPrefix:@"iPhone7,"]) {
         NSInteger submodel = [self eckit_getSubmodel:platformString];
         if (submodel <= 1) {
             return UIDeviceiPhone6Plus;
@@ -317,7 +317,7 @@
             return UIDeviceiPhone6;
         }
     }
-    if ([platformString hasPrefix:@"iPhone8"]) {
+    if ([platformString hasPrefix:@"iPhone8,"]) {
         NSInteger submodel = [self eckit_getSubmodel:platformString];
         if (submodel <= 1) {
             return UIDeviceiPhone6s;
@@ -329,30 +329,30 @@
     }
 
     // iPod
-    if ([platformString hasPrefix:@"iPod1"]) {
+    if ([platformString hasPrefix:@"iPod1,"]) {
         return UIDeviceiPod1;
     }
     if ([platformString isEqualToString:@"iPod2,2"]) {
         return UIDeviceiPod3;
     }
-    if ([platformString hasPrefix:@"iPod2"]) {
+    if ([platformString hasPrefix:@"iPod2,"]) {
         return UIDeviceiPod2;
     }
-    if ([platformString hasPrefix:@"iPod3"]) {
+    if ([platformString hasPrefix:@"iPod3,"]) {
         return UIDeviceiPod3;
     }
-    if ([platformString hasPrefix:@"iPod4"]) {
+    if ([platformString hasPrefix:@"iPod4,"]) {
         return UIDeviceiPod4;
     }
-    if ([platformString hasPrefix:@"iPod5"]) {
+    if ([platformString hasPrefix:@"iPod5,"]) {
         return UIDeviceiPod5;
     }
 
     // iPad
-    if ([platformString hasPrefix:@"iPad1"]) {
+    if ([platformString hasPrefix:@"iPad1,"]) {
         return UIDeviceiPad1;
     }
-    if ([platformString hasPrefix:@"iPad2"]) {
+    if ([platformString hasPrefix:@"iPad2,"]) {
         NSInteger submodel = [self eckit_getSubmodel:platformString];
         if (submodel <= 4) {
             return UIDeviceiPad2;
@@ -360,7 +360,7 @@
             return UIDeviceiPadMini;
         }
     }
-    if ([platformString hasPrefix:@"iPad3"]) {
+    if ([platformString hasPrefix:@"iPad3,"]) {
         NSInteger submodel = [self eckit_getSubmodel:platformString];
         if (submodel <= 3) {
             return UIDeviceiPad3;
@@ -369,7 +369,7 @@
         }
     }
 
-    if ([platformString hasPrefix:@"iPad4"]) {
+    if ([platformString hasPrefix:@"iPad4,"]) {
         NSInteger submodel = [self eckit_getSubmodel:platformString];
         if (submodel < 4) {
             return UIDeviceiPadAir;
@@ -380,7 +380,7 @@
         }
     }
 
-    if ([platformString hasPrefix:@"iPad5"]) {
+    if ([platformString hasPrefix:@"iPad5,"]) {
         NSInteger submodel = [self eckit_getSubmodel:platformString];
         if (submodel < 3) {
             return UIDeviceiPadMini4;
@@ -389,7 +389,7 @@
         }
     }
 
-    if ([platformString hasPrefix:@"iPad6"]) {
+    if ([platformString hasPrefix:@"iPad6,"]) {
         NSInteger submodel = [self eckit_getSubmodel:platformString];
         switch (submodel) {
             case 3:
@@ -406,7 +406,7 @@
         }
     }
 
-    if ([platformString hasPrefix:@"iPad7"]) {
+    if ([platformString hasPrefix:@"iPad7,"]) {
         NSInteger submodel = [self eckit_getSubmodel:platformString];
         switch (submodel) {
             case 1:
@@ -423,7 +423,7 @@
         }
     }
 
-    if ([platformString hasPrefix:@"iPad8"]) {
+    if ([platformString hasPrefix:@"iPad8,"]) {
         NSInteger submodel = [self eckit_getSubmodel:platformString];
         switch (submodel) {
             case 1:
@@ -441,7 +441,7 @@
         }
     }
 
-    if ([platformString hasPrefix:@"iPad11"]) {
+    if ([platformString hasPrefix:@"iPad11,"]) {
         NSInteger submodel = [self eckit_getSubmodel:platformString];
         switch (submodel) {
             case 1:
